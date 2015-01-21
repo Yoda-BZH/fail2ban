@@ -19,16 +19,16 @@ logpath  = /var/log/daemon.log
 maxretry = 3
 ```
 
-fail2ban-ssh
+repeat-ssh
 ============
 
 A rule for repeatedly banned hosts.
 
 Configuration:
 ```
-[fail2ban-ssh]
+[repeat-ssh]
 enabled  = true
-filter   = fail2ban-ssh
+filter   = repeat-ssh
 logpath  = /var/log/fail2ban.log
 maxretry = 3
 # 3600 * 24 * 3
@@ -42,7 +42,7 @@ port     = ssh
 permanent-ssh
 ==========
 
-A Rule to ban far longer banned hosts from fail2ban-ssh
+A Rule to ban far longer banned hosts from repeat-ssh
 
 ```
 [permanent-ssh]
