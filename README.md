@@ -39,15 +39,15 @@ port     = ssh
 ```
 
 
-repeat-ssh
+permanent-ssh
 ==========
 
 A Rule to ban far longer banned hosts from fail2ban-ssh
 
 ```
-[repeat-ssh]
+[permanent-ssh]
 enabled  = true
-filter   = repeat-ssh
+filter   = permanent-ssh
 logpath  = /var/log/fail2ban.log
 maxretry = 3
 findtime = 259200
