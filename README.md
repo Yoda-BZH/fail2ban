@@ -44,6 +44,7 @@ repeat-ssh
 
 A Rule to ban far longer banned hosts from fail2ban-ssh
 
+```
 [repeat-ssh]
 enabled  = true
 filter   = repeat-ssh
@@ -53,5 +54,5 @@ findtime = 259200
 # 3600 * 24 * 365
 bantime  = 31536000
 port     = ssh
-
+```
 
